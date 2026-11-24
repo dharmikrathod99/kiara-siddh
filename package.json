@@ -9,8 +9,6 @@
     "lint": "node node_modules/eslint/bin/eslint.js"
   },
   "dependencies": {
-    "@next/swc-wasm-nodejs": "^16.4.6",
-    "@next/swc-win32-x64-msvc": "^16.4.6",
     "canvas-confetti": "^1.9.4",
     "framer-motion": "^12.4.7",
     "gsap": "^3.12.7",
