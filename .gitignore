@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large video files (> 50MB / unused duplicates)
+src/videos/
+public/videos/reel5.mp4
+public/videos/main-video.mp4
+

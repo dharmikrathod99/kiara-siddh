@@ -1,26 +1,33 @@
 {
-  "name": "kabir-kiara-wedding",
+  "name": "sidharth-kiara-wedding",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "node node_modules/next/dist/bin/next dev --port 3001",
+    "build": "node node_modules/next/dist/bin/next build",
+    "start": "node node_modules/next/dist/bin/next start --port 3001",
+    "lint": "node node_modules/eslint/bin/eslint.js"
   },
   "dependencies": {
+    "@next/swc-wasm-nodejs": "^16.4.6",
+    "@next/swc-win32-x64-msvc": "^16.4.6",
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^12.4.7",
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.20",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@tailwindcss/turbopack": "4.3.3",
+    "@tailwindcss/cli": "^4.0.0",
+    "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
-    "tailwindcss": "4.3.3",
+    "tailwindcss": "^4.0.0",
     "typescript": "^5"
   }
 }

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #F7F1E8;
+  --color-champagne: #C9A96E;
+  --color-deep-gold: #A8854A;
+  --color-beige: #E6D9C6;
+  --color-blush: #E8C9C1;
+  --color-ink: #14110F;
+  --color-cocoa: #3B2F2A;
+
+  --font-display: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-editorial: var(--font-italiana), 'Italiana', serif;
+  --font-script: var(--font-pinyon), 'Pinyon Script', cursive;
+  --font-sans-body: var(--font-jost), 'Jost', sans-serif;
+}
+
+:root {
+  --background: #F7F1E8;
+  --foreground: #3B2F2A;
+}
+
+html {
+  scroll-behavior: initial;
+  background-color: #14110F;
+  color: #3B2F2A;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #F7F1E8;
+  color: #3B2F2A;
+  font-family: var(--font-jost), 'Jost', sans-serif;
+  overflow-x: clip;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #C9A96E;
+  color: #14110F;
+}
+
+/* Lenis smooth scroll classes */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Typography Utilities */
+.font-display {
+  font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: var(--font-italiana), 'Italiana', serif;
+}
+
+.font-script {
+  font-family: var(--font-pinyon), 'Pinyon Script', cursive;
+}
+
+.font-sans-body {
+  font-family: var(--font-jost), 'Jost', sans-serif;
+}
+
+/* Luxury Hairline & Borders */
+.hairline-champagne {
+  border-color: rgba(201, 169, 110, 0.3);
+}
+
+.hairline-champagne-light {
+  border-color: rgba(201, 169, 110, 0.18);
+}
+
+.hairline-champagne-dark {
+  border-color: rgba(201, 169, 110, 0.45);
+}
+
+.champagne-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 169, 110, 0.4) 20%, rgba(201, 169, 110, 0.4) 80%, transparent);
+}
+
+/* Soft Vignette for dark cinematic scenes */
+.cinematic-vignette {
+  box-shadow: inset 0 0 120px rgba(20, 17, 15, 0.85);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #14110F;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 169, 110, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A96E;
+}
